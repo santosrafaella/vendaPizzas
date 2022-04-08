@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Pizzas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>Bairro das Flores</h1></li>
+            <li><h2>Pizzaria</h2></li>
+        </ul>
+    </header>
+
+    <section id="radio">
+        <form>
+            <h3>SELECIONE O SABOR DA SUA PIZZA</h3>
+           <ul>
+               <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela">Mussarela</label></li>
+               <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">Calabresa</label></li>
+               <li><input type="radio" id="vegetariana" name="pizzas"><label for="vegetariana">Vegetariana</label></li>
+           </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th><th>Quantidade</th><th>Valores (R$)</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarla"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resultadoCalabresa"></td><td id="vendaCalabresa"></td>
+            </tr>
+            <tr>
+                <td>Vegetariana</td><td id="resultadoVegetariana"></td><td id="vendaVegetariana"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="export"><button>Planilha</button></section>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
